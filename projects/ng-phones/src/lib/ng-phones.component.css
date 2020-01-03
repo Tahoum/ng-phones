@@ -1,0 +1,115 @@
+.container {
+  position: relative;
+}
+.input-container{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.flags-selection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 60px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  border: 3px solid #e5e5e5;
+  border-right:none;
+  margin-right: -2px;
+  cursor: pointer;
+  background: transparent;
+  transition: background .2s;
+
+}
+.phone-input{
+  height: 45px;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  max-width: 100%;
+  border: 0 none;
+  padding: 0 10px;
+  background: #fff;
+  color: #666;
+  border: 3px solid #e5e5e5;
+  border-left:none;
+  transition: 0.2s ease-in-out;
+  transition-property: color, background-color, border;
+  -webkit-appearance: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.phone-input:focus{
+  border-color: #e11334;
+  outline: none;
+}
+.phone-input:focus + .flags-selection{
+  border-color: #e11334;
+  outline: none;
+}
+.flags-selection:hover{
+  background-color: #e5e5e5;
+}
+.single-flag{
+  width: 20px;
+  background-image: url(https://intl-tel-input.com/node_modules/intl-tel-input/build/img/flags.png);
+  background-repeat: no-repeat;
+
+}
+.dropdown{
+  width:calc(100% - 6px);
+  height: 250px;
+  border: 3px solid #e5e5e5;
+  border-top:none;
+  position: absolute;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  overflow: auto;
+  opacity: 1;
+  transition: opacity .2s;
+  background: white;
+}
+.country-phone{
+  padding: 5px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  list-style: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  align-items: center;
+  display: -webkit-box;
+}
+.country-phone:hover{
+  background-color: #e5e5e5;
+}
+
+.hide-dropdown {
+  pointer-events: none;
+  opacity: 0;
+}
+.country-name {
+  color: #cccccc;
+  margin-left: 3px;
+
+}
+.country-code {
+  margin-left: 3px;
+}
+input[type="text"].phone-input::-webkit-input-placeholder {
+  color: #e5e5e5;
+  font-weight: 400;
+}

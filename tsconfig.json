@@ -18,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-phones": [
+        "dist/ng-phones"
+      ],
+      "ng-phones/*": [
+        "dist/ng-phones/*"
+      ]
+    }
   }
 }

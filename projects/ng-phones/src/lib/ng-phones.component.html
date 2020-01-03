@@ -1,0 +1,13 @@
+<div class="container" [ngStyle]="{'width': inputWidth}">
+  <div class="input-container">
+      <input class="phone-input" type="text" placeholder="650123456">
+      <div (click)="toggleDropdown()" class="flags-selection"  id="flags-selection">
+          <div class="single-flag" [ngClass]="defaulfCountry">
+
+          </div>
+      </div>
+  </div>
+  <div [class.hide-dropdown]="!isDropdownShown"  class="dropdown" id="dropdown">
+    <div (click)="emitCountryCode(country[2], country[1])" class="country-phone" *ngFor="let country of countriesCodes"><div class="single-flag" [ngClass]="country[1]"></div> <span class="country-code">+{{country[2]}}</span> <span class="country-name">{{country[0]}}</span></div>
+  </div>
+</div>
