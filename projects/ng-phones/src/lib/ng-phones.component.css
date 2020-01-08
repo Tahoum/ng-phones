@@ -26,6 +26,7 @@
 
 }
 .phone-input{
+  outline: none;
   height: 45px;
   width: 100%;
   border-top-right-radius: 10px;
@@ -45,15 +46,11 @@
   transition-property: color, background-color, border;
   -webkit-appearance: none;
   font-size: 18px;
-  font-weight: bold;
 }
-.phone-input:focus{
-  border-color: #e11334;
-  outline: none;
-}
-.phone-input:focus + .flags-selection{
-  border-color: #e11334;
-  outline: none;
+input[type="tel"].phone-input::-webkit-input-placeholder {
+  opacity: 0.5;
+  font-weight: normal;
+  font-style: italic;
 }
 .flags-selection:hover{
   background-color: #e5e5e5;
