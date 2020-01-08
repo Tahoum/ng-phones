@@ -17,7 +17,7 @@
   -moz-border-radius-bottomleft: 10px;
   -webkit-border-top-left-radius: 10px;
   -webkit-border-bottom-left-radius: 10px;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-right:none;
   margin-right: -2px;
   cursor: pointer;
@@ -39,7 +39,7 @@
   padding: 0 10px;
   background: #fff;
   color: #666;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-left:none;
   transition: 0.2s ease-in-out;
   transition-property: color, background-color, border;
@@ -65,9 +65,9 @@
 
 }
 .dropdown{
-  width:calc(100% - 6px);
+  width:calc(100% - 4px);
   height: 250px;
-  border: 3px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
   border-top:none;
   position: absolute;
   border-bottom-right-radius: 10px;

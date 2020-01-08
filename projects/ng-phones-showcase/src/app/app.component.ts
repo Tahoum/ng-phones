@@ -6,9 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-phones-showcase';
 
-  getCountryCode(code): void {
+  getCountryCode(code: string): void {
     console.log(code);
   }
+  setNumber(value: string): void {
+    console.log(value);
+  }
+
 }

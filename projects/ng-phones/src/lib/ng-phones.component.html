@@ -1,6 +1,6 @@
 <div class="container" [ngStyle]="{'width': inputWidth}">
   <div class="input-container">
-      <input class="phone-input" type="text" placeholder="650123456">
+  <input [(ngModel)]="data" (ngModelChange)="dataChanged($event)" class="phone-input" type="text" placeholder="650123456">
       <div (click)="toggleDropdown()" class="flags-selection"  id="flags-selection">
           <div class="single-flag" [ngClass]="defaulfCountry">
 

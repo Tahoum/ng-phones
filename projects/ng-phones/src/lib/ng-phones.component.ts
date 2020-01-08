@@ -9,9 +9,11 @@ export class NgPhonesComponent implements OnInit {
 
   countriesCodes: Array<any>;
   isDropdownShown = false;
+  data: number;
   @Input() defaulfCountry: string;
   @Input() inputWidth: string;
   @Output() countryCode = new EventEmitter<string>();
+  @Output() phoneNumber = new EventEmitter<string>();
   constructor(private phonesService: NgPhonesService) { }
 
   ngOnInit() {
@@ -34,6 +36,10 @@ export class NgPhonesComponent implements OnInit {
     this.countryCode.emit(countryCode);
     this.defaulfCountry = country;
     this.toggleDropdown();
+  }
+
+  dataChanged(value: string): void {
+    this.phoneNumber.emit(value);
   }
 
 }
