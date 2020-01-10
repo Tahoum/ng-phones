@@ -1,6 +1,6 @@
 # NgPhones
 
-NgPhones is a simple angular module for selecting d 
+NgPhones is a simple angular module for selecting international phone codes.
 
 ## Installation
 
